@@ -1,0 +1,5 @@
+<h1>Job Listings</h1>
+<% @jobposts.each do |jobpost| %>
+    <h3><%= jobpost.title %></h3>
+    <p><%= jobpost.description %></p>
+<% end %>
