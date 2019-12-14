@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SimpleBlog</title>
+    <title>Job Portal</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -21,9 +21,7 @@
         <li><%= link_to "Home", home_path, :class => "nav-link"%></li>
         <li><%= link_to "View Job", viewJob_path, :class => "nav-link"%></li>
         <li><%= link_to "New Job", new_path, :class => "nav-link"%></li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
+        <li><%= link_to "Login", welcome_path, :class => "nav-link"%></li>
         </ul>
       </div>
     </div>
