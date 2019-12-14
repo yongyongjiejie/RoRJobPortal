@@ -1,12 +1,9 @@
 <h2><%= @jobpost.title %></h2>
-<p><%= @jobpost.body %></p>
+<p><%= @jobpost.description %></p>
 <hr>
-<%= link_to "Edit", edit_post_path(@jobpost), :class => 'btn btn-default' %>
-<%= link_to "Delete", post_path(@jobpost), 
+<%= link_to "Edit", edit_jobpost_path(@jobpost), :class => 'btn btn-primary' %>
+<%= link_to "Delete", jobpost_path(@jobpost), 
                 method: :delete,
                 data: {confirm: 'Are you sure?'},
                 :class => 'btn btn-danger' %>
 <hr>
-
-<%= render 'comments/comments' %>
-<%= render 'comments/form' %>
