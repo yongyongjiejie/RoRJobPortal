@@ -1,12 +1,6 @@
-<h1>Add Job</h1>
+<h1>Edit Job</h1>
 
-<% if flash[:errors] %>
-    <% flash[:errors].each do |error| %>
-        <p style="color: red"><%= error %></p>
-    <% end %>
-<% end %>
-
-<%= form_for :jobpost, url: jobposts_path do |f| %>
+<%= form_for :jobpost, url: jobpost_path(@jobpost), method: :patch do |f| %>
     <p>
         <%= f.label :title %><br>
         <%= f.text_field(:title, {:class => 'form-control'}) %>

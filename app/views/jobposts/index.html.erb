@@ -2,4 +2,6 @@
 <% @jobposts.each do |jobpost| %>
     <h3><%= jobpost.title %></h3>
     <p><%= jobpost.description %></p>
+    <%= link_to "Read More", jobpost_path(jobpost), :class => 'btn btn-primary' %>
+    <br><br>
 <% end %>
