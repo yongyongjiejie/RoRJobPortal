@@ -1,4 +1,5 @@
 # README
+Simple rails job portal for ruby on rails beginner. Feel free to fork it if you want.
 
 ## Version
 * [Rails 5.2.4]
