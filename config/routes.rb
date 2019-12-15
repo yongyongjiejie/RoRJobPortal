@@ -11,10 +11,11 @@ Rails.application.routes.draw do
 
   #User Controller
   resources :users, only: [:new, :create]
+  get 'register', to: 'users#new'
 
   #Session Controller
   get 'login', to: 'sessions#new'
   post 'login', to: 'sessions#create'
-  get 'welcome', to: 'sessions#welcome'
+  get 'logout', to: 'sessions#logout'
   get 'authorized', to: 'sessions#page_requires_login'
 end
